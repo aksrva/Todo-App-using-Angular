@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "taskTitle": "Learn Angular",
+      "taskDescription": "Learn Interpolation"
+    },
+    {
+      "id": 2,
+      "taskTitle": "Learn React",
+      "taskDescription": "learn React Component and property"
+    },
+    {
+      "id": 3,
+      "taskTitle": "Learn Angular Forms",
+      "taskDescription": "Forms -> Template Driven Forms and Reactive Forms"
+    }
+  ]
+}

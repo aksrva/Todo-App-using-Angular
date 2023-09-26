@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="task-form">
+        <div class="form-content">
+            <h1>Todo</h1>
+            <div class="form-container">
+                <input type="text" placeholder="Create a new todo..." [(ngModel)]="taskTitle">
+                <input type="text" placeholder="Write description" [(ngModel)]="taskDesc">
+                <button class="add-btn btn" (click)="addNewTask()">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="task-list">
+        <div class="task" *ngFor="let task of tasks">
+            <div class="task-content">
+                <h3 class="task-title">{{task.taskTitle}}</h3>
+                <p class="task-description">{{task.taskDescription}}</p>
+            </div>
+            <div class="task-btn">
+                <button class="edit-btn btn" (click)="callEdit(task)">📝</button>
+                <button class="delete-btn btn" (click)="deleteTask(task.id)">x</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- popup -->
+
+<div class="popup {{isDisplay}}">
+    <div class="closebtn" (click)="hideShowPopup()">x</div>
+    <div class="edit-form">
+        <div class="form-content">
+            <h1>Edit Todo</h1>
+            <div class="form-container">
+                <input type="text" placeholder="Edit todo task..." [(ngModel)]="editTaskTitle">
+                <input type="text" placeholder="Edit description" [(ngModel)]="editTaskDesc">
+                <button class="add-btn btn" (click)="editTask()">🖊️</button>
+            </div>
+        </div>
+    </div>
+</div>

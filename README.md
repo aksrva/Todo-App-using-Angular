@@ -1,27 +1,47 @@
-# NgTodoApp
+# Todo Web Application using Angular and JSON-Server
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+Welcome to the Todo Web App System! This application is designed to help you add your tasks. In this application used the services and component and models  the topics of the angular.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Front-end Requirements
 
-## Code scaffolding
+1. **Homepage**: Display all tasks, Add new Task, Delete Task and Edit task.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. **Responsive Design**: Ensure the application is fully functional and visually coherent on mobile devices.
 
-## Build
+### Back-end Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Create an API with endpoints to support CRUD operations for tasks with using the JSON-Server.
 
-## Running unit tests
+## Tech Stack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Database**: JSON-Server
+- **Frontend**: HTML, CSS
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To get this application up and running, follow these steps:
 
-## Further help
+1. Clone the repository:
+ ```bash
+   git clone https://github.com/aksrva/Todo-App-using-Angular.git
+   cd Todo-App-using-Angular
+```
+2. Install the required dependencies:
+ ```bash
+    npm install
+ ```
+3. Install the JSON-Server:
+ ```bash
+    npm install -g json-server
+ ```
+4. Run the JSON-Server:
+ ```bash
+    npm install -g json-server
+ ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Start the application:
+```bash
+    ng serve
+```
